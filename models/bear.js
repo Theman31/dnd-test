@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 var BearSchema = new Schema({
   name: String,
-  alias: String
+  foods: [{type: mongoose.Schema.Types.ObjectId, ref: 'Food'}]
 })
 
 module.exports = mongoose.model('Bear', BearSchema);
