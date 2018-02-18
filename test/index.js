@@ -7,7 +7,7 @@ mongoose.Promise = bluebird;
 
 const port = process.env.PORT || 8080;
 
-import '../lib/server.js';
+import '../dist/server.js';
 
 describe('Crud Bears mongo', () => {
   it('should return 200', done => {
