@@ -3,13 +3,9 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import bluebird from 'bluebird';
 
-// Local models/files
 import Bear from '../models/Bear';
 import Food from '../models/Food';
-import Enemy from '../models/Enemy';
-import Friend from '../models/Friend';
 
-// mongoose needs a new promise library
 mongoose.Promise = bluebird;
 
 const app = express();
